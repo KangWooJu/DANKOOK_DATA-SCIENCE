@@ -9,6 +9,7 @@ score = pd.Series([75,80,90,60],
 salary
 score
 
+# 값의 변경 
 score.iloc[0] = 85                                          # 인덱스 0 의 값을 변경
 score
 score.loc['SOC'] = 65                                       # 인덱스 'SOC' 의 값을 변경 
@@ -40,9 +41,9 @@ salary = salary._append(pd.Series([66]),ignore_index=True)
 salary
 
 # 값의 삭제 
-salary = pd.Series([20,15,18,30])
-score = pd.Series([75,80,90,60],
-                  index=['KOR','ENG','MATH','SOC'])
+salary = pd.Series([20,15,18,30,10])
+score = pd.Series([75,80,90,60,10],
+                  index=['KOR','ENG','MATH','SOC','PHY'])
 
 score.drop('PHY')                                           # 레이블 인덱스가 있는 경우 
 score                                                       # score의 내용 변동 없음 

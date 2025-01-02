@@ -27,7 +27,7 @@ df['Species'].unique()                                # 자료에서 중복된 �
 
 df.iloc[2,3]                                          # 2행 3열의 값 
 df.loc[3,'Petal_Width']                               # 'Petal_Width' 칼럼의 3행 값
-df.loc[[0,2,4],['Petal_length','Petal_Width']]        # 
+df.loc[[0,2,4],['Petal_Length','Petal_Width']]        # 
 
 df.loc[5:8,'Petal_Length']                            # 'Petal_Length' 컬럼의 5 ~ 7행 값 
 df.iloc[:5,:4]                                        # 0 ~ 4행 , 0 ~ 3열의 값

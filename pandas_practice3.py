@@ -12,4 +12,4 @@ score.columns = ['KOR','ENG','MATH','SCI']
 score
 
 score.iloc[2,1]
-score.loc['Tom',"ENG"]
+score.loc['Tom',"ENG"] 
