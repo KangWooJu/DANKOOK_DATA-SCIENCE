@@ -3,7 +3,7 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
 
-plt.rcParams['font.family'] = 'Malgun Gothic'            # 한글 폰트 변경  
+plt.rcParams['font.family'] = 'AppleGothic'            # 한글 폰트 변경  
 plt.rcParams['axex.unicode_minus'] = False               # 마이너스부호 깨짐 방지 
 
 
