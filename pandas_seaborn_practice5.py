@@ -21,8 +21,8 @@ props = lambda key : {'color':'lightgreen' if '생존' in key else 'yellow'}
 # 그래프 작성
 mosaic(data=df.sort_values('sex'),
        index=['sex','survived'],
-       properties = props,
-       axes_label = True,
-       title='타이타닉 남녀 생존비율')
+       properties = props,                                                     # 타일 색상 변경   
+       axes_label = True,                                                      # 축 레이블 표시  
+       title='타이타닉 남녀 생존비율')                                              # 그래프 제목  
 
 plt.show()

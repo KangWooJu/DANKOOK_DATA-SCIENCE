@@ -19,9 +19,9 @@ df3=pd.DataFrame([[3,22],
 df1
 df2
 df3
-df12 = pd.concat([df1,df2])                                           #concat() 메소드로 병합하기 
+df12 = pd.concat([df1,df2])                                           # 행 방향 병합하기  
 df12
 df12=df12.reset_index()
 df12
-df13 = pd.concat([df1,df3],axis=1)
+df13 = pd.concat([df1,df3],axis=1)                                    # 열 방향 병합하기  -> 존재하지 않는 행에 대해서는 Nan 처리 
 df13

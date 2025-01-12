@@ -5,10 +5,10 @@ flights = sns.load_dataset('flights')
 flights.head()
 
 # 피벗 테이블 생성
-df = flights.pivot_table(index='month',
+df = flights.pivot_table(index='month', 
                          columns='year',
-                         values='passengers',
-                         aggfunc='mean')
+                         values='passengers',                    # 데이터로 사용할 컬럼  
+                         aggfunc='mean')                         # 데이터 집계함수  
 df.head()
 
 # 히트맵 작성
