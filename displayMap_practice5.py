@@ -39,7 +39,7 @@ showMap(map)
 map = folium.Map(location=center, zoom_start=5) # 마커 없는 지도
 for i in range(len(df)):
     folium.CircleMarker(location=[df.lat.iloc[i], df.lon.iloc[i]],
-                        radius=(df.spd.iloc[i]**0.5)*2, # 원의 반지름
+                        radius=(df.iloc[i]**0.5)*2, # 원의 반지름
                         color='red', # 원의 색
                         stroke=False, # 윤곽선 없음
                         fill=True, # 원의 내부 색
